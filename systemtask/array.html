@@ -1,0 +1,57 @@
+<!DOTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>arrys</title>
+</head>
+<body>
+	<p id="demo"></p>
+ <button onclick="myFun()">POP</button>
+
+ <p id="demo1"></p>
+ <button onclick="myFun1()">PUSH</button>
+
+ <p id="demo2"></p>
+ <button onclick="myFun2()">SHIFT</button>
+ <p id="demo3"></p>
+ <button onclick="myFun3()">UNSHIFT</button>
+ <p id="demo4"></p>
+ <button onclick="myFun4()">slice</button>
+</body>
+<script>
+	var fruits=["apple","banana","mango","kiwi"];
+	document.getElementById("demo").innerHTML=fruits;
+	function myFun(){
+
+  fruits.pop();
+document.getElementById("demo").innerHTML=fruits;
+
+	}
+
+ function myFun1(){
+
+  fruits.push("grapes");
+document.getElementById("demo1").innerHTML=fruits;
+
+	}
+	
+	function myFun2(){
+
+  fruits.shift();
+document.getElementById("demo2").innerHTML=fruits;
+
+	}
+	function myFun3(){
+
+  fruits.unshift("sandhya");
+document.getElementById("demo3").innerHTML=fruits;
+
+	}
+	function myFun4(){
+
+  fruits.slice(2);
+document.getElementById("demo4").innerHTML=fruits ;
+
+	}
+	</script>
+</html>

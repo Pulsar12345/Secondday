@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>local storage</title>
+ </head>
+ <body>
+ <table id="table">
+<tr>
+	<td>UserName:
+<input type="text" id="userName">
+	</td>
+</tr>
+<tr>
+	<td>Password:
+	<input type="text" id="password">
+
+</td>
+</tr>
+ </table>
+ </body>
+ <script>
+ 	if(typeof(Storage)!=undefined)
+ 	{
+ 		var a=document.getElementById("userName").value;
+ 		var b=document.getElementById("password").value;
+ 		localStorage.setItem("a","sandhya");
+ 		localStorage.setItem("b","rani");
+ 		
+ 	}else{
+ 		alert("your browser not support");
+ 	}
+
+ </script>
+ </html>
